@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vbj-np-SbC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vbj-np-SbC">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -36,11 +37,54 @@
                             <outlet property="delegate" destination="dNY-UJ-JDt" id="SH5-nR-KPc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cm4-o6-G3J"/>
+                    <navigationItem key="navigationItem" id="cm4-o6-G3J">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lwq-aW-LOf">
+                            <connections>
+                                <segue destination="OBB-Nc-kmG" kind="modal" id="qXL-OH-jMz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKX-u5-qfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="707" y="140"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HEs-bE-WdI">
+            <objects>
+                <viewController id="OBB-Nc-kmG" customClass="FISViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4z-yX-ayV"/>
+                        <viewControllerLayoutGuide type="bottom" id="dbj-nS-KkT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mA9-g9-hSK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bca-yZ-9cO">
+                                <rect key="frame" x="143" y="359" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="OBB-Nc-kmG" eventType="touchUpInside" id="Tgz-nT-cvf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-NQ-Fgo">
+                                <rect key="frame" x="16" y="175" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextfield" destination="CMO-NQ-Fgo" id="Whn-Cc-Iy0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4z-T0-IPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KXb-P8-rcA">

@@ -33,13 +33,23 @@
     self.store = [FISDataStore sharedDataStore];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
     [self.store fetchData];
     [self.tableView reloadData];
+    
+    
 }
+
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//
+//    [self.store fetchData];
+//    [self.tableView reloadData];
+//}
 
 - (void)didReceiveMemoryWarning
 {

@@ -25,6 +25,7 @@
 		D879F377195E030C00FC5285 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D879F376195E030C00FC5285 /* CoreData.framework */; };
 		D879F37A195E032D00FC5285 /* FISTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D879F379195E032D00FC5285 /* FISTableViewController.m */; };
 		D879F37D1960928D00FC5285 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D879F37C1960928D00FC5285 /* Message.m */; };
+		DBEEAFBF1B3C6E840032F691 /* FISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEEAFBE1B3C6E840032F691 /* FISViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		D879F379195E032D00FC5285 /* FISTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISTableViewController.m; sourceTree = "<group>"; };
 		D879F37B1960928D00FC5285 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		D879F37C1960928D00FC5285 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		DBEEAFBD1B3C6E840032F691 /* FISViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISViewController.h; sourceTree = "<group>"; };
+		DBEEAFBE1B3C6E840032F691 /* FISViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				D879F34A195E028000FC5285 /* Main.storyboard */,
 				D879F378195E032D00FC5285 /* FISTableViewController.h */,
 				D879F379195E032D00FC5285 /* FISTableViewController.m */,
+				DBEEAFBD1B3C6E840032F691 /* FISViewController.h */,
+				DBEEAFBE1B3C6E840032F691 /* FISViewController.m */,
 				D879F350195E028000FC5285 /* Images.xcassets */,
 				D879F33F195E028000FC5285 /* Supporting Files */,
 			);
@@ -272,6 +277,7 @@
 				D879F375195E02C000FC5285 /* slapChat.xcdatamodeld in Sources */,
 				D879F372195E02B400FC5285 /* FISDataStore.m in Sources */,
 				D879F349195E028000FC5285 /* FISAppDelegate.m in Sources */,
+				DBEEAFBF1B3C6E840032F691 /* FISViewController.m in Sources */,
 				D879F37A195E032D00FC5285 /* FISTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
